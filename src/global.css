@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply leading-[normal] m-0;
+}
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+table {
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 12px;
+  font-family: 'Merriweather';
+}
+
+th {
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+  color: #A0A0A0;
+  padding: 29px 0;
+}
+
+td {
+  text-align: center;
+  color: #787878;
+  font-size: 12px;
+  padding: 19px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-custom {
+  width: 1440px;
+}
+@media only screen and (max-width: 1441px) {
+  .footer-custom {
+    width: 100% !important;
+  }
+}
+.slick-track img, .slick-track div {
+  outline: none !important;
+}
